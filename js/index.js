@@ -13,36 +13,31 @@ window.onmousedown = () => {isDrawing = true; };
 window.onmouseup = () => {isDrawing = false; };
 
 function toggleLED(id, element) {
-    const btn = event.target;
-    btn.classList.toggle('active');
-    
-    if (!arduinoIP) {
-        alert("No IP address set!");
-        return;
-    }
-
-    const status = btn.classList.contains('active') ? 1 : 0;
-    console.log(`LED ${id} is now ${status}`);
     fetch(`http://${arduinoIP}:${port}/set?id=${id}&val=${status}`, {
         mode: 'no-cors' // This prevents the browser from blocking the request
     })
 
     .then(() => console.log(`Sent: LED ${id} to ${status}`))
     .catch(err => console.error("Request failed:", err));
-    
-    const isOn = button.classList.contains('active');
-    console.log("button " + id + "is now" + (isOn ? "RED" : "OFF"));
-    
 }
 
-function draw(element) {
+function sendLED(id, state) {
+    if (!arduinoIP) {
+        alert("no IP adress set!")
+        return;
+    }
+    fetch(`http://${arduinoIP}:${port}/set?id=${id}&val=${status}`, {
+        mode: 'no-cors' // This prevents the browser from blocking the request
+    })
+
+    .then(() => console.log(`Sent: LED ${id} to ${status}`))
+    .catch(err => console.error("Request failed:", err));
+}
+
+function draw(element, id) {
     if (isDrawing) {
         element.classList.add('active');
+        sendLED(id, 1);
     }
 }
 
-function drawInvert(element) {
-    if (isDrawing) {
-        element.classList.remove('active')
-    }
-}
