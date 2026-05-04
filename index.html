@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            ScreenEdit
+        </title>
+        <link rel="stylesheet" href="./css/site.css">
+        <script src="./js/index.js"></script>
+    </head>
+
+    <input>
+         
+    <input/>
+
+    <body>
+        <h1>Matrix Control</h1>
+        <p>Control an LED-matrix of a compatible microcontroller with WiFi capabilities.</p>
+        <div class="btngrpx">
+            <!-- Row 1 -->
+            <button type="button" onclick="toggleLED(1, this)" onmouseover="draw(this)" draggable="false">1</button>
+            <button type="button" onclick="toggleLED(2, this)" onmouseover="draw(this)" draggable="false">2</button>
+            <button type="button" onclick="toggleLED(3, this)" onmouseover="draw(this)" draggable="false">3</button>
+            <button type="button" onclick="toggleLED(4, this)" onmouseover="draw(this)" draggable="false">4</button>
+            <button type="button" onclick="toggleLED(5, this)" onmouseover="draw(this)" draggable="false">5</button>
+            <button type="button" onclick="toggleLED(6, this)" onmouseover="draw(this)" draggable="false">6</button>
+            <button type="button" onclick="toggleLED(7, this)" onmouseover="draw(this)" draggable="false">7</button>
+            <button type="button" onclick="toggleLED(8, this)" onmouseover="draw(this)" draggable="false">8</button>
+            <button type="button" onclick="toggleLED(9, this)" onmouseover="draw(this)" draggable="false">9</button>
+            <button type="button" onclick="toggleLED(10, this)" onmouseover="draw(this)" draggable="false">10</button>
+            <button type="button" onclick="toggleLED(11, this)" onmouseover="draw(this)" draggable="false">11</button>
+            <button type="button" onclick="toggleLED(12, this)" onmouseover="draw(this)" draggable="false">12</button>
+            <!-- Row 2 -->
+            <button type="button" onclick="toggleLED(13, this)" onmouseover="draw(this)" draggable="false">13</button>
+            <button type="button" onclick="toggleLED(14, this)" onmouseover="draw(this)" draggable="false">14</button>
+            <button type="button" onclick="toggleLED(15, this)" onmouseover="draw(this)" draggable="false">15</button>
+            <button type="button" onclick="toggleLED(16, this)" onmouseover="draw(this)" draggable="false">16</button>
+            <button type="button" onclick="toggleLED(17, this)" onmouseover="draw(this)" draggable="false">17</button>
+            <button type="button" onclick="toggleLED(18, this)" onmouseover="draw(this)" draggable="false">18</button>
+            <button type="button" onclick="toggleLED(19, this)" onmouseover="draw(this)" draggable="false">19</button>
+            <button type="button" onclick="toggleLED(20, this)" onmouseover="draw(this)" draggable="false">20</button>
+            <button type="button" onclick="toggleLED(21, this)" onmouseover="draw(this)" draggable="false">21</button>
+            <button type="button" onclick="toggleLED(22, this)" onmouseover="draw(this)" draggable="false">22</button>
+            <button type="button" onclick="toggleLED(23, this)" onmouseover="draw(this)" draggable="false">23</button>
+            <button type="button" onclick="toggleLED(24, this)" onmouseover="draw(this)" draggable="false">24</button>
+            <!-- Row 3 -->
+            <button type="button" onclick="toggleLED(25, this)" onmouseover="draw(this)" draggable="false">25</button>
+            <button type="button" onclick="toggleLED(26, this)" onmouseover="draw(this)" draggable="false">26</button>
+            <button type="button" onclick="toggleLED(27, this)" onmouseover="draw(this)" draggable="false">27</button>
+            <button type="button" onclick="toggleLED(28, this)" onmouseover="draw(this)" draggable="false">28</button>
+            <button type="button" onclick="toggleLED(29, this)" onmouseover="draw(this)" draggable="false">29</button>
+            <button type="button" onclick="toggleLED(30, this)" onmouseover="draw(this)" draggable="false">30</button>
+            <button type="button" onclick="toggleLED(31, this)" onmouseover="draw(this)" draggable="false">31</button>
+            <button type="button" onclick="toggleLED(32, this)" onmouseover="draw(this)" draggable="false">32</button>
+            <button type="button" onclick="toggleLED(33, this)" onmouseover="draw(this)" draggable="false">33</button>
+            <button type="button" onclick="toggleLED(34, this)" onmouseover="draw(this)" draggable="false">34</button>
+            <button type="button" onclick="toggleLED(35, this)" onmouseover="draw(this)" draggable="false">35</button>
+            <button type="button" onclick="toggleLED(36, this)" onmouseover="draw(this)" draggable="false">36</button>
+            <!-- Row 4 -->
+            <button type="button" onclick="toggleLED(37, this)" onmouseover="draw(this)" draggable="false">37</button>
+            <button type="button" onclick="toggleLED(38, this)" onmouseover="draw(this)" draggable="false">38</button>
+            <button type="button" onclick="toggleLED(39, this)" onmouseover="draw(this)" draggable="false">39</button>
+            <button type="button" onclick="toggleLED(40, this)" onmouseover="draw(this)" draggable="false">40</button>
+            <button type="button" onclick="toggleLED(41, this)" onmouseover="draw(this)" draggable="false">41</button>
+            <button type="button" onclick="toggleLED(42, this)" onmouseover="draw(this)" draggable="false">42</button>
+            <button type="button" onclick="toggleLED(43, this)" onmouseover="draw(this)" draggable="false">43</button>
+            <button type="button" onclick="toggleLED(44, this)" onmouseover="draw(this)" draggable="false">44</button>
+            <button type="button" onclick="toggleLED(45, this)" onmouseover="draw(this)" draggable="false">45</button>
+            <button type="button" onclick="toggleLED(46, this)" onmouseover="draw(this)" draggable="false">46</button>
+            <button type="button" onclick="toggleLED(47, this)" onmouseover="draw(this)" draggable="false">47</button>
+            <button type="button" onclick="toggleLED(48, this)" onmouseover="draw(this)" draggable="false">48</button>
+            <!-- Row 5 -->
+            <button type="button" onclick="toggleLED(49, this)" onmouseover="draw(this)" draggable="false">49</button>
+            <button type="button" onclick="toggleLED(50, this)" onmouseover="draw(this)" draggable="false">50</button>
+            <button type="button" onclick="toggleLED(51, this)" onmouseover="draw(this)" draggable="false">51</button>
+            <button type="button" onclick="toggleLED(52, this)" onmouseover="draw(this)" draggable="false">52</button>
+            <button type="button" onclick="toggleLED(53, this)" onmouseover="draw(this)" draggable="false">53</button>
+            <button type="button" onclick="toggleLED(54, this)" onmouseover="draw(this)" draggable="false">54</button>
+            <button type="button" onclick="toggleLED(55, this)" onmouseover="draw(this)" draggable="false">55</button>
+            <button type="button" onclick="toggleLED(56, this)" onmouseover="draw(this)" draggable="false">56</button>
+            <button type="button" onclick="toggleLED(57, this)" onmouseover="draw(this)" draggable="false">57</button>
+            <button type="button" onclick="toggleLED(58, this)" onmouseover="draw(this)" draggable="false">58</button>
+            <button type="button" onclick="toggleLED(59, this)" onmouseover="draw(this)" draggable="false">59</button>
+            <button type="button" onclick="toggleLED(60, this)" onmouseover="draw(this)" draggable="false">60</button>
+            <!-- Row 6 -->
+            <button type="button" onclick="toggleLED(61, this)" onmouseover="draw(this)" draggable="false">61</button>
+            <button type="button" onclick="toggleLED(62, this)" onmouseover="draw(this)" draggable="false">62</button>
+            <button type="button" onclick="toggleLED(63, this)" onmouseover="draw(this)" draggable="false">63</button>
+            <button type="button" onclick="toggleLED(64, this)" onmouseover="draw(this)" draggable="false">64</button>
+            <button type="button" onclick="toggleLED(65, this)" onmouseover="draw(this)" draggable="false">65</button>
+            <button type="button" onclick="toggleLED(66, this)" onmouseover="draw(this)" draggable="false">66</button>
+            <button type="button" onclick="toggleLED(67, this)" onmouseover="draw(this)" draggable="false">67</button>
+            <button type="button" onclick="toggleLED(68, this)" onmouseover="draw(this)" draggable="false">68</button>
+            <button type="button" onclick="toggleLED(69, this)" onmouseover="draw(this)" draggable="false">69</button>
+            <button type="button" onclick="toggleLED(70, this)" onmouseover="draw(this)" draggable="false">70</button>
+            <button type="button" onclick="toggleLED(71, this)" onmouseover="draw(this)" draggable="false">71</button>
+            <button type="button" onclick="toggleLED(72, this)" onmouseover="draw(this)" draggable="false">72</button>
+            <!-- Row 7 -->
+            <button type="button" onclick="toggleLED(73, this)" onmouseover="draw(this)" draggable="false">73</button>
+            <button type="button" onclick="toggleLED(74, this)" onmouseover="draw(this)" draggable="false">74</button>
+            <button type="button" onclick="toggleLED(75, this)" onmouseover="draw(this)" draggable="false">75</button>
+            <button type="button" onclick="toggleLED(76, this)" onmouseover="draw(this)" draggable="false">76</button>
+            <button type="button" onclick="toggleLED(77, this)" onmouseover="draw(this)" draggable="false">77</button>
+            <button type="button" onclick="toggleLED(78, this)" onmouseover="draw(this)" draggable="false">78</button>
+            <button type="button" onclick="toggleLED(79, this)" onmouseover="draw(this)" draggable="false">79</button>
+            <button type="button" onclick="toggleLED(80, this)" onmouseover="draw(this)" draggable="false">80</button>
+            <button type="button" onclick="toggleLED(81, this)" onmouseover="draw(this)" draggable="false">81</button>
+            <button type="button" onclick="toggleLED(82, this)" onmouseover="draw(this)" draggable="false">82</button>
+            <button type="button" onclick="toggleLED(83, this)" onmouseover="draw(this)" draggable="false">83</button>
+            <button type="button" onclick="toggleLED(84, this)" onmouseover="draw(this)" draggable="false">84</button>
+            <!-- Row 8 -->
+            <button type="button" onclick="toggleLED(85, this)" onmouseover="draw(this)" draggable="false">85</button>
+            <button type="button" onclick="toggleLED(86, this)" onmouseover="draw(this)" draggable="false">86</button>
+            <button type="button" onclick="toggleLED(87, this)" onmouseover="draw(this)" draggable="false">87</button>
+            <button type="button" onclick="toggleLED(88, this)" onmouseover="draw(this)" draggable="false">88</button>
+            <button type="button" onclick="toggleLED(89, this)" onmouseover="draw(this)" draggable="false">89</button>
+            <button type="button" onclick="toggleLED(90, this)" onmouseover="draw(this)" draggable="false">90</button>
+            <button type="button" onclick="toggleLED(91, this)" onmouseover="draw(this)" draggable="false">91</button>
+            <button type="button" onclick="toggleLED(92, this)" onmouseover="draw(this)" draggable="false">92</button>
+            <button type="button" onclick="toggleLED(93, this)" onmouseover="draw(this)" draggable="false">93</button>
+            <button type="button" onclick="toggleLED(94, this)" onmouseover="draw(this)" draggable="false">94</button>
+            <button type="button" onclick="toggleLED(95, this)" onmouseover="draw(this)" draggable="false">95</button>
+            <button type="button" onclick="toggleLED(96, this)" onmouseover="draw(this)" draggable="false">96</button>
+        </div>
+    </body>
+</html>
+
