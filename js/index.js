@@ -13,24 +13,20 @@ window.onmousedown = () => {isDrawing = true; };
 window.onmouseup = () => {isDrawing = false; };
 
 function toggleLED(id, element) {
-    fetch(`http://${arduinoIP}:${port}/set?id=${id}&val=${status}`, {
-        mode: 'no-cors' // This prevents the browser from blocking the request
-    })
-
-    .then(() => console.log(`Sent: LED ${id} to ${status}`))
-    .catch(err => console.error("Request failed:", err));
+    element.classList.toggle('active');
+    const state = element.classList.contains('active') ? 1 : 0;
+    sendLED(id, state);
 }
 
 function sendLED(id, state) {
     if (!arduinoIP) {
-        alert("no IP adress set!")
+        alert("No IP address set!");
         return;
     }
-    fetch(`http://${arduinoIP}:${port}/set?id=${id}&val=${status}`, {
-        mode: 'no-cors' // This prevents the browser from blocking the request
+    fetch(`http://${arduinoIP}:${port}/set?id=${id}&val=${state}`, {
+        mode: 'no-cors'
     })
-
-    .then(() => console.log(`Sent: LED ${id} to ${status}`))
+    .then(() => console.log(`Sent: LED ${id} → ${state}`))
     .catch(err => console.error("Request failed:", err));
 }
 
