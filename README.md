@@ -6,4 +6,4 @@ The key to the lock on the Arduinos Code...
 
 Still under construction
 
-[Link to corresponding project](https://github.com/MetroTS/Arduino_WiFi_Display)
+[Link to corresponding project](https://github.com/MetroTS/Arduino_WiFi_Display) <-- C++ code for Arduino
